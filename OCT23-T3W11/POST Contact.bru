@@ -1,0 +1,23 @@
+meta {
+  name: POST Contact
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/contacts/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Dillon",
+    "address": {
+      "street": "123 Fake Street",
+      "suburb": "Bendigo",
+      "postcode": 3550,
+      "state": "Vic"
+    }
+  }
+}
